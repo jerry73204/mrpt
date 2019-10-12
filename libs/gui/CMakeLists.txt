@@ -66,4 +66,8 @@ if(BUILD_mrpt-gui)
 		target_link_libraries(gui PRIVATE ${MRPT_OPENGL_LIBS})
 	endif()
 
+	if (CMAKE_MRPT_HAS_NANOGUI)
+		target_link_libraries(gui PUBLIC nanogui::nanogui)
+	endif()
+
 endif()
