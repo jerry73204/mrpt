@@ -67,6 +67,9 @@ if(BUILD_mrpt-gui)
 	endif()
 
 	if (CMAKE_MRPT_HAS_NANOGUI)
+		# Dep: build EP_nanogui first
+		add_dependencies(gui EP_nanogui_sdl)
+		# then, define the -I and -l
 		target_link_libraries(gui PUBLIC nanogui::nanogui)
 	endif()
 

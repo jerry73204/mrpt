@@ -1,10 +1,10 @@
 #-----------------------------------------------------------------------------------------------
-# CMake file for the MRPT example:  /gui_display3D_gui
+# CMake file for the MRPT example:  /gui_nanogui_demo
 #
 #  Run with "ccmake ." at the root directory, or use it as a template for
 #   starting your own programs
 #-----------------------------------------------------------------------------------------------
-set(sampleName gui_display3D_gui)
+set(sampleName gui_nanogui_demo)
 project(EXAMPLE_${sampleName})
 
 cmake_minimum_required(VERSION 3.1)

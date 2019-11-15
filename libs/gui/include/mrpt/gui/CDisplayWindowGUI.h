@@ -12,7 +12,7 @@
 
 #include <mrpt/config.h>
 #if MRPT_HAS_NANOGUI
-#include <nanogui/nanogui.h>
+#include <sdlgui/sdlguii.h>
 #endif
 
 namespace mrpt::gui
